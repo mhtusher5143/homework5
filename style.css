@@ -50,7 +50,25 @@ body{
     background: transparent;
     border-radius: 0;
     text-align: center;
+    text-transform: capitalize;
 }
 .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
     border-bottom: none;
+}
+.sub-menu-2{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: -10px;
+}
+.menu-bar ul li:hover .sub-menu-2 ul{
+    display: block;
+    margin: 0px;
+}    
+.menu-bar ul li:hover .sub-menu-2 ul li{
+    text-align: center;
+    padding: 10px;
 }
