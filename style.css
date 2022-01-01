@@ -1,74 +1,61 @@
-*{
-    padding: 0;
+section.ourservices {
+    text-align: center;
+}
+h1 {
+    font-weight: revert;
+    font-size: 52px;
+    line-height: 81px;
     margin: 0;
-    box-sizing: border-box;
+    margin-bottom: 30px;
 }
-body{
-    background-image: url(nature-g22f1d3e6f_1280.jpg);
-    font-family: sans-serif;
+.singlepart {
+    display: flex;
+    padding: 30px 8%;
+    column-gap: 40px;
 }
-.menu-bar{
-    background: chartreuse;
-    text-align: center;
+.single {
+    background-color: darkseagreen;
+    padding: 30px 35px;
 }
-.menu-bar ul{
-    display: inline-flex;
-    list-style: none;
-    color: #fff;
+.icon {
+    height: 60px;
+    width: 62px;
+    line-height: 56px;
+    background-color: #eee;
+    margin: 0 auto;
+    border-top-left-radius: 49px;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 31px;
 }
-.menu-bar ul li{
-    width: 150px;
-    margin: 18px;
-    padding: 12px;
+.dualpart {
+    display: flex;
+    padding: 8% 30px;
+    column-gap: 40px;
 }
-.menu-bar li a{
-    text-decoration: none;
-    color: cornsilk;
+.icon-2 {
+    height: 60px;
+    width: 60px;
+    line-height: 50px;
+    margin: 0 auto;
+    background-color: #eee;
+    border-bottom-left-radius: 87px;
+    border-bottom-right-radius: 77px;
+    border-top-left-radius: 84px;
+    border-top-right-radius: 33px;
+    transform: translate3d(5px, -32px, 9px);
 }
-.active, .menu-bar ul li:hover{
-    background: darkgoldenrod;
-    border-radius: 2px;
+.icon-2:hover{
+    background-color: blueviolet;
 }
-.sub-menu-1{
-    display: none;
+.dual {
+    background-color: bisque;
+    padding: 4px 10px;
+    border-radius: 29px;
+    transition: all ease o.7sec;
+    /* transition: all ease 0.7s; */
+    transition: all ease 0.7s;
 }
-.menu-bar ul li:hover .sub-menu-1{
-    display: block;
-    position: absolute;
-    background: rgb(0, 100, 0);
-    margin-top: 15px;
-    margin-left: -15px;
-}
-.menu-bar ul li:hover .sub-menu-1 ul{
-    display: block;
-    margin: 10px;
-}
-.menu-bar ul li:hover .sub-menu-1 ul li{
-    width: 150px;
-    padding: 10px;
-    border-bottom:1px dotted #fff;
-    background: transparent;
-    border-radius: 0;
-    text-align: center;
-    text-transform: capitalize;
-}
-.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
-    border-bottom: none;
-}
-.sub-menu-2{
-    display: none;
-}
-.menu-bar ul li:hover .sub-menu-2{
-    display: block;
-    position: absolute;
-    margin-top: 12px;
-    margin-left: -10px;
-}
-.menu-bar ul li:hover .sub-menu-2 ul{
-    display: block;
-    margin: 0px;
-}    
-.menu-bar ul li:hover .sub-menu-2 ul li{
-    text-align: center;
-    padding: 10px;
+.dual:hover{
+    background-color: darkcyan;
 }
